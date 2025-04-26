@@ -69,3 +69,17 @@ button:focus-visible {
 		background-color: #f9f9f9;
 	}
 }
+
+/* Fix for scrollbar */
+
+@supports (scrollbar-color: auto) {
+	.custom-scroll {
+		scrollbar-color: #8585AD #2F2F37;
+		scrollbar-width: thin;
+	}
+
+	.body {
+		scrollbar-color: #8585AD #2F2F37;
+		scrollbar-width: thin;
+	}
+}
