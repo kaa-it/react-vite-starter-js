@@ -22,6 +22,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
+	"plugins": [{ "name": "typescript-plugin-css-modules" }],
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }],
 	"types": ["@testing-library/jest-dom"]
