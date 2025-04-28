@@ -2,7 +2,8 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '../public/vite.svg';
 import './App.css';
-import { Preloader } from './components/preloader/preloader.tsx';
+import { Preloader } from '../preloader/preloader.tsx';
+import { add } from '@utils/utils.ts';
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -22,7 +23,7 @@ function App() {
 			</h1>
 			<div className='card'>
 				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
+					count is {add(String(count), String(count))}
 				</button>
 				<p>
 					Edit <code>src/App.tsx</code> and save to test HMR
