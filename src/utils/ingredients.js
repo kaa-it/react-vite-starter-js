@@ -1,6 +1,4 @@
-import { TIngredient } from '@utils/types.ts';
-
-export const ingredients: TIngredient[] = [
+export const ingredients = [
 	{
 		_id: '60666c42cc7b410027a1a9b1',
 		name: 'Краторная булка N-200i',

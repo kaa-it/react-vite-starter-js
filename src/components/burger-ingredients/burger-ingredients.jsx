@@ -1,15 +1,10 @@
 import React from 'react';
 import styles from './burger-ingredients.module.css';
-import { TIngredient } from '@utils/types.ts';
+import * as PropTypes from 'prop-types';
 import { Tab } from '@ya.praktikum/react-developer-burger-ui-components';
+import { ingredientPropType } from '@utils/prop-types.js';
 
-type TBurgerIngredientsProps = {
-	ingredients: TIngredient[];
-};
-
-export const BurgerIngredients = ({
-	ingredients,
-}: TBurgerIngredientsProps): React.JSX.Element => {
+export const BurgerIngredients = ({ ingredients }) => {
 	console.log(ingredients);
 
 	return (
@@ -29,4 +24,8 @@ export const BurgerIngredients = ({
 			</nav>
 		</section>
 	);
+};
+
+BurgerIngredients.propTypes = {
+	ingredients: PropTypes.arrayOf(ingredientPropType.isRequired).isRequired,
 };

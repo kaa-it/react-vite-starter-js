@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './app.module.css';
-import { ingredients } from '@utils/ingredients.ts';
-import { BurgerIngredients } from '@components/burger-ingredients/burger-ingredients.tsx';
-import { BurgerConstructor } from '@components/burger-contructor/burger-constructor.tsx';
-import { AppHeader } from '@components/app-header/app-header.tsx';
+import { ingredients } from '@utils/ingredients.js';
+import { BurgerIngredients } from '@components/burger-ingredients/burger-ingredients.jsx';
+import { BurgerConstructor } from '@components/burger-contructor/burger-constructor.jsx';
+import { AppHeader } from '@components/app-header/app-header.jsx';
 
-export const App = (): React.JSX.Element => {
+export const App = () => {
 	return (
 		<div className={styles.app}>
 			<AppHeader />
@@ -20,5 +20,3 @@ export const App = (): React.JSX.Element => {
 		</div>
 	);
 };
-
-export default App;
